@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="shortcut icon" href="src/assets/img/favicon.png">
+  <link rel="stylesheet" href="./src/assets/css/estilo.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="./src/app/shared/util/util.js"></script>
+</head>
+
+<body>
+  <div id="page">
+
+    <header>
+      <h1><i class="fas fa-user-graduate"></i> Turma 2020.1</h1>
+      <nav>
+        <a href="#" onclick="abrirModal()">Configurações</a>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <canvas id="canvas" width="150" height="150">
+        Caso não suporte canvas, escreva isto!
+      </canvas>
+    </section>
+
+    <main>
+
+      <section>
+        <h1>Avisos</h1>
+        <details>
+          <summary>Nota dos alunos lançadas!</summary>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam aliquid voluptates odit tempora ab, iste
+            dolorem dolores doloribus impedit deserunt dignissimos in quisquam maiores quam molestiae qui itaque totam
+            officia!</p>
+        </details>
+        <details>
+          <summary>Niver do professor esse mes</summary>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam aliquid voluptates odit tempora ab, iste
+            dolorem dolores doloribus impedit deserunt dignissimos in quisquam maiores quam molestiae qui itaque totam
+            officia!</p>
+        </details>
+        <details>
+          <summary>Pelada de domingo, todos convidados</summary>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam aliquid voluptates odit tempora ab, iste
+            dolorem dolores doloribus impedit deserunt dignissimos in quisquam maiores quam molestiae qui itaque totam
+            officia!</p>
+        </details>
+      </section>
+
+      <section>
+        <h1>Alunos</h1>
+        <div class="container_alunos">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </section>
+
+      <section>
+        <h1>Contato</h1>
+        <fieldset>
+          <legend>Informações</legend>
+        <div class="container_contato">
+          <label>Nome</label>
+          <input type="text" placeholder="Seu nome">
+
+          <label>Email</label>
+          <input type="text" placeholder="Seu email">
+
+          <label>Telefone</label>
+          <input type="text" placeholder="(99)9999-9999">
+
+          <label>Sugestões</label>
+          <textarea placeholder="Sugestões" rows="5" ></textarea>
+
+          <button type="submit">Enviar</button>  
+
+        </div>
+        </fieldset>
+      </section>
+    </main>
+    <div>
+      <a target="_blank" href="https://veekun.com/dex/downloads">Pokedex sprites</a> sprites por <a target="_blank" href="https://veekun.com">veekun</a>
+      <a target="_blank" href="https://icons8.com.br/icons/set/pokedex">Pokedex icon</a> ícone por <a target="_blank" href="https://icons8.com.br">Icons8</a>
+    </div>
+  </div>
+
+  
+  <div class="modal">
+    <div class="modal-content">
+      <a href="#" onclick="fecharModal()">Fechar</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

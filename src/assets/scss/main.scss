@@ -1,0 +1,21 @@
+$light-green: #2ddf5c;
+$light-red: #ff1b68;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview {
+    background: $light-red;
+
+    h1 {
+        color: #ffffff;
+        font-family: 'Anton', sans-serif;
+    }
+}
+
+
+
+.section-title {
+    color: $light-green;
+}

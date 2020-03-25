@@ -1,0 +1,119 @@
+$body-color: #efefef
+$page-color: #fff
+$breakpoint-sm: 600px
+$breakpoint-md: 900px
+$breakpoint-lg: 1200px
+$font-titulo: 'Oswald', sans-serif
+$font-corpo: 'Roboto', sans-serif
+
+
+@mixin bordas($valor)
+    border-radius: $valor
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3)
+
+body
+  background: $body-color
+  font-family: $font-corpo
+
+  h1
+    font-family: $font-titulo
+    
+  #page
+    border: 1px solid #000
+    margin: 0 auto
+    background: $page-color
+    padding: 10px
+    header 
+      min-height: 100px
+      h1, nav
+        display: inline-block
+      nav
+        float: right
+
+    #banner
+      background: url(../img/banner.jpg) no-repeat center
+      background-size: 100%
+      min-height: 300px
+      @include bordas(5px)
+      
+    
+    main
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      section
+        width: 30%
+        padding: 10px
+        background: $body-color
+        margin: 20px 0
+        @include bordas(3px)
+
+@media (min-width: $breakpoint-sm) 
+  #page
+    //background-color: blue
+    max-width: 800px
+
+@media (min-width: $breakpoint-md) 
+  #page
+    //background-color: red
+    max-width: $breakpoint-lg
+
+@media (max-width: $breakpoint-sm) 
+  #page
+    //background-color: pink
+    max-width: $breakpoint-sm
+
+.container_alunos
+  display: flex;
+  flex-wrap: wrap;
+  
+  .item
+    background: url(../img/avatar.jpeg) no-repeat center;
+    background-size: cover;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.5em;
+
+    img
+      width: 100%;
+
+.modal
+  width: 100vw
+  height: 100vh
+  background-color: rgba(0, 0, 0, 0.8)
+  position: absolute
+  top: 0 
+  center: 0
+  display: none
+  &.active
+    display: block
+
+  .modal-content
+    background: #ffffff
+    width: 50%
+    height: 300px
+    @include bordas(5px)
+    margin: 100px auto
+    box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5)
+    
+.container_contato
+  display: flex
+  flex-direction: column
+  label
+    margin-bottom: 5px
+    margin-top: 15px
+  input
+     @include bordas(5px)
+     height: 25px 
+  textarea
+     @include bordas(5px)   
+  button
+    height: 30px;
+    font-weight: bold
+    background-color: #3399FF
+    @include bordas(5px)
+    font-size: 14px
+    margin-top: 10px

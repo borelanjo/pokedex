@@ -1,0 +1,165 @@
+body {
+  background: #efefef;
+  font-family: "Roboto", sans-serif;
+}
+
+body h1 {
+  font-family: "Oswald", sans-serif;
+}
+
+body #page {
+  border: 1px solid #000;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+}
+
+body #page header {
+  min-height: 100px;
+}
+
+body #page header h1, body #page header nav {
+  display: inline-block;
+}
+
+body #page header nav {
+  float: right;
+}
+
+body #page #banner {
+  background: url(../img/banner.jpg) no-repeat center;
+  background-size: 100%;
+  min-height: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+body #page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #page main section {
+  width: 30%;
+  padding: 10px;
+  background: #efefef;
+  margin: 20px 0;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+  #page {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 900px) {
+  #page {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #page {
+    max-width: 600px;
+  }
+}
+
+.container_alunos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container_alunos .item {
+  background: url(../img/avatar.jpeg) no-repeat center;
+  background-size: cover;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container_alunos .item img {
+  width: 100%;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  center: 0;
+  display: none;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal .modal-content {
+  background: #ffffff;
+  width: 50%;
+  height: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  margin: 100px auto;
+  -webkit-box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container_contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_contato label {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.container_contato input {
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  height: 25px;
+}
+
+.container_contato textarea {
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container_contato button {
+  height: 30px;
+  font-weight: bold;
+  background-color: #3399FF;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=estilo.css.map */
